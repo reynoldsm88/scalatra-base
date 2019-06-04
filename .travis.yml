@@ -7,14 +7,14 @@ cache:
 language: scala
 
 scala:
-  - 2.12.8
+    - 2.12.7
 
 jdk:
-  - openjdk8
+    - openjdk8
 
 branches:
   only:
     - master
 
-script:
-  - sbt ++$TRAVIS_SCALA_VERSION clean compile test
+script: 
+    - sbt ++$TRAVIS_SCALA_VERSION clean compile test
