@@ -1,9 +1,9 @@
 import sbt._
 import Dependencies._
 
-organization := "org.reynoldsm88"
+organization in ThisBuild := "org.reynoldsm88"
 name := "scalatra-base"
-version := "0.0.1-SNAPSHOT"
+version in ThisBuild := "0.0.1-SNAPSHOT"
 scalaVersion in ThisBuild := "2.12.7"
 
 resolvers in ThisBuild ++= Seq( "Sonatype releases" at "https://oss.sonatype.org/content/repositories/releases",
