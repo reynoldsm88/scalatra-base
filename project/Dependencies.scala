@@ -11,9 +11,8 @@ object Dependencies {
     val scoptVersion = "4.0.0-RC2"
     val betterFilesVersion = "3.8.0"
 
-    val slf4j = Seq( "org.slf4j" % "slf4j-api" % slf4jVersion )
-
-    val logback = Seq( "ch.qos.logback" % "logback-classic" % logbackVersion )
+    val logging = Seq( "org.slf4j" % "slf4j-api" % slf4jVersion,
+                       "ch.qos.logback" % "logback-classic" % logbackVersion )
     
     val betterFiles = Seq( "com.github.pathikrit" %% "better-files" % betterFilesVersion )
 
