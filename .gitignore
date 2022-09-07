@@ -14,10 +14,13 @@ project/plugins/project/
 project/target
 project/project
 
-# Scala-IDE specific
+# IntelliJ
 .scala_dependencies
 .worksheet
-*.iml
 .idea/*
 .idea
+.bsp
+
+# Mac
 .DS_Store
+.java-version

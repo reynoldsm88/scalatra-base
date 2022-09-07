@@ -5,10 +5,7 @@ organization in ThisBuild := "com.github.reynoldsm88"
 name := "scalatra-base"
 scalaVersion in ThisBuild := "2.12.7"
 
-resolvers in ThisBuild ++= Seq( "Sonatype releases" at "https://oss.sonatype.org/content/repositories/releases",
-                                "Spray IO Repository" at "https://repo.spray.io/",
-                                "Maven Central" at "https://repo1.maven.org/maven2/",
-                                "Typesafe repository" at "https://repo.typesafe.com/typesafe/releases/",
+resolvers in ThisBuild ++= Seq( "Maven Central" at "https://repo1.maven.org/maven2/",
                                 "JCenter" at "https://jcenter.bintray.com",
                                 "Local Ivy Repository" at s"file://${System.getProperty( "user.home" )}/.ivy2/local/default" )
 

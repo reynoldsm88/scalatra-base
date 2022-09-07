@@ -1,9 +1,11 @@
 package org.reynoldsm88
 
-import org.scalatest.FlatSpecLike
+import org.scalatest.flatspec.AnyFlatSpecLike
 import org.scalatra.test.scalatest.ScalatraSuite
 
-class ScalatraControllerTestSuite extends FlatSpecLike with ScalatraSuite {
+import org.scalatest.matchers.should.Matchers
+
+class ScalatraControllerTestSuite extends AnyFlatSpecLike with ScalatraSuite with Matchers {
 
     addServlet( new ScalatraController, "/*" )
 
@@ -19,4 +21,6 @@ class ScalatraControllerTestSuite extends FlatSpecLike with ScalatraSuite {
             status should equal( 201 )
         }
     }
+
+    override def header = null
 }
